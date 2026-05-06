@@ -7,7 +7,18 @@ void setup() {
 }
 
 void loop() {
-  //increased motor speed
-  analogWrite(leftMotor, 200);
-  analogWrite(rightMotor, 200);
+
+  // Standard forward movement
+  analogWrite(leftMotor, 140);
+  analogWrite(rightMotor, 140);
+
+  delay(500);
+
+  // Corner testing adjustment
+  // Slows right motor slightly to improve turning
+  analogWrite(leftMotor, 150);
+  analogWrite(rightMotor, 120);
+
+  delay(300);
+
 }
