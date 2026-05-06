@@ -7,6 +7,7 @@ void setup() {
 }
 
 void loop() {
-  analogWrite(leftMotor, 120);
-  analogWrite(rightMotor, 120);
+  //increased motor speed
+  analogWrite(leftMotor, 200);
+  analogWrite(rightMotor, 200);
 }
